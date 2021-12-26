@@ -11,7 +11,7 @@ class Solution {
 	vector<int> countBits(int n) {
 		vector<int> result;
 		for (int i = 0; i <= n; i++) {
-			bitset<32> b(n);
+			bitset<32> b(i);
 			result.push_back(b.count());
 		}
 		return result;
